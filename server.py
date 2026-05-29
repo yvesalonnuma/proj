@@ -14,7 +14,7 @@ from datetime import datetime
 
 # ── Logging setup ─────────────────────────────────────────────────────────────
 logging.basicConfig(
-    level=logging.INFO, # שונה ל-INFO כדי למנוע הצפת קונסול, אפשר להחזיר ל-DEBUG במידת הצורך
+    level=logging.INFO,  # שונה ל-INFO כדי למנוע הצפת קונסול, אפשר להחזיר ל-DEBUG במידת הצורך
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%H:%M:%S",
 )
@@ -24,7 +24,7 @@ log = logging.getLogger("TagServer")
 HOST = "127.0.0.1"
 PORT = 5555
 ROUND_DURATION = 60.0  # seconds per round
-GAME_OVER_DURATION = 5.0 # כמה שניות מסך הסיום יוצג לפני סיבוב חדש
+GAME_OVER_DURATION = 5.0  # כמה שניות מסך הסיום יוצג לפני סיבוב חדש
 TAG_COOLDOWN = 2.0  # seconds before re-tag is allowed
 TAG_RADIUS = 40  # pixel collision radius
 TICK_RATE = 0.05  # server broadcast interval (20 Hz)

@@ -375,7 +375,7 @@ class TagClient:
             # ציור מסך סיום אם המשחק נגמר
             if self.game_over:
                 overlay = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
-                overlay.fill((0, 0, 0, 200)) # מסך כהה חצי-שקוף
+                overlay.fill((0, 0, 0, 200))  # מסך כהה חצי-שקוף
                 self.screen.blit(overlay, (0, 0))
 
                 title = self.font_big.render("TIME'S UP!", True, (255, 255, 255))
@@ -391,6 +391,7 @@ class TagClient:
 
         pygame.quit()
         sys.exit()
+
 
 if __name__ == "__main__":
     TagClient().run()
